@@ -1,0 +1,59 @@
+.home__container{
+    row-gap: 7rem;
+    display:flex
+}
+.home__content{
+    /* grid-template-columns: 116px repeat(2,1fr); */
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+.home_social{
+    display: grid;
+    /* grid-template-columns: max-content; */
+    row-gap: 1rem;
+
+}
+.home_social_icon{
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+.home_social_icon:hover{
+    color: var(--title-color-dark);
+}
+.home__title{
+    font-size: 1.5265rem;
+    /* margin-bottom: var(--mb-0-25); */
+    font-weight: 500;
+}
+.home__title span {
+    color: rgb(170, 107, 228);
+}
+.home__subtitle{
+    position: relative;
+    font-size: 1.5265rem;
+    /* padding-left: 5.4rem; */
+    font-weight: var(--font-medium);
+    /* margin-bottom: var(--mb-1); */
+}
+.home__type{
+    /* padding-top: 0; */
+    font-size: 1.5265rem;
+    color: rgb(170, 107, 228);
+    /* padding-bottom: 100%; */
+}
+
+    .home_img {
+        /* background: url(../../assets//profile.jpg); */
+        background-repeat: no-repeat;
+        background-position:right;
+        background-size: cover;
+        box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+        order: 1;
+        justify-self: center;
+        width: 1500px;
+        height: 200px;
+        animation: profile__animate 8s ease-in-out infinite 1s;
+    
+}
+

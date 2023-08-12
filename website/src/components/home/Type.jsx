@@ -18,7 +18,7 @@ function Type() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="home__type">
       <span ref={el} />
     </div>
   );
