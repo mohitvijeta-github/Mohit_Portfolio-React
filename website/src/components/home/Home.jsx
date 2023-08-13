@@ -3,30 +3,36 @@ import './home.css';
 import Data from './Data';
 import Type from './Type';
 import Social from './Social';
-import Img from "../../assets/mohit.jpg";
+import Img from "../../assets/img.png";
 
 function Home() {
 return(
     <section className="home section" id="home">
         <div className="home__container container gap">
-            <div className="home__content">
+            <div className="home__social__left">
+            <Social/> 
+            </div>
+
+            <div className="left__section">
+            
             <Data/>
                 <Type/>
 
             </div>
                 
-                <div className="home__img">
-                    <img src={Img} width={100} height={100}/>
+                <div className="right__section">
+                    <img src={Img} />
                 
 
                 </div>
                 
-                <Social/> 
+               
 
                 
             
             {/* <ScrollDown/> */}
         </div>
+      
     </section>
 )
 }

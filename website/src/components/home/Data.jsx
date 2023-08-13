@@ -8,6 +8,7 @@ function Data(){
             <h1 className="home__subtitle"> and I'm a passionate </h1>
             
          </div>
+         
 
     )
 }
