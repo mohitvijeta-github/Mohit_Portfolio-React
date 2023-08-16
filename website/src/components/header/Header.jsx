@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import "./header.css";
+import logo from './nlogo.png'
+
 
 const Header = () => {
+
+
+  
   /*=============== Change Background Header ===============*/
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
@@ -13,12 +18,13 @@ const Header = () => {
   /*=============== Toggle Menu ===============*/
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
-
+ 
   return (
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
-          Mohit
+          <img src={logo} alt="logo" />
+        
         </a>
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
@@ -94,15 +100,18 @@ const Header = () => {
                 href="#contact"
                 onClick={() => setActiveNav("#contact")}
                 className={
-                  activeNav === "#contact"
-                    ? "nav__link active-link"
-                    : "nav__link"
+                  activeNav === "#contact" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-message nav__icon"></i> Contact
+                <i className="uil uil-user nav__icon"></i> Contact
               </a>
             </li>
+
+
+
           </ul>
+
+  
 
           <i
             className="uil uil-times nav__close"
@@ -110,11 +119,15 @@ const Header = () => {
           ></i>
         </div>
 
+
+
         <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
           <i className="uil uil-apps"></i>
         </div>
       </nav>
+      
     </header>
+   
   );
 };
 

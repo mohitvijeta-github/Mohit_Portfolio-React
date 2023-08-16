@@ -7,8 +7,8 @@ function Type() {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['<i>Software</i> Developer.', 'Full-stack Developer','& System Adminstrator; .'],
-      typeSpeed: 50,
+      strings: ['<i>Software Developer.', 'Full-stack Developer', ' System Adminstrator ','  </i> Software Developer.'],
+      typeSpeed: 40,
     });
 
     return () => {
