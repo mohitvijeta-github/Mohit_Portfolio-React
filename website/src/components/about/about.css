@@ -7,17 +7,12 @@
     column-gap: 4rem;
 }
 
-.about__img{
-    width: 350px;
+ .about-img{
+    width: 300px;
     border-radius: 1.5rem;
     justify-content: center;
-}
-.about-img{
-    border: 3px solid #000;
-    border-radius: 10px;
-
-}
-
+    filter: drop-shadow(10px 10px 20px rgba(0,0,0,0.5));
+} 
 .about__info{
     grid-template-columns: repeat(3,140px);
     gap: 0.5rem;
