@@ -1,13 +1,14 @@
-import Work1 from "../../assets/cert0.png";
-import Work2 from "../../assets/cert1.png";
-import Work3 from "../../assets/cert2.png";
-import Work4 from "../../assets/cert3.png";
-import Work5 from "../../assets/cert4.png";
+import Work1 from "../../assets/cert1.png";
+import Work2 from "../../assets/cert2.png";
+import Work3 from "../../assets/cert3.png";
+import Work4 from "../../assets/cert4.png";
+import Work5 from "../../assets/cert5.png";
 import Work6 from "../../assets/cert6.png";
-import Work7 from "../../assets/degree.png";
+import Work7 from "../../assets/aws.png";
 import Work8 from "../../assets/redhat1.png";
 import Work9 from "../../assets/redhat2.png";
-import Work10 from "../../assets/aws.png";
+import Work10 from "../../assets/degree.png";
+
 
 export const projectsData = [
   {
@@ -19,7 +20,7 @@ export const projectsData = [
   {
     id: 2,
     image: Work2,
-    title: "Programming with JavaScript",
+    title: " Core JavaScript",
     category: "Full-Stack",
   },
   {
@@ -31,7 +32,7 @@ export const projectsData = [
   {
     id: 4,
     image: Work4,
-    title: "Advanced HTML and CSS",
+    title: " Depth of HTML & CSS",
     category: "Full-Stack",
   },
   {
@@ -49,26 +50,28 @@ export const projectsData = [
   {
     id:7,
     image: Work7,
-    title: "Bachelor of Information Technology",
-    category: "Uni Degree",
+    title: "AWS Cloud",
+    category: "Extra-curricular",
+
   },
   {
     id:8,
     image: Work8,
-    title: "Red Hat Certified System Administrator I",
+    title: "RHSCA I",
     category: "Extra-curricular",
   },
   {
     id:9,
     image: Work9,
-    title: "Red Hat Certified System Administrator II",
+    title: "RHSCA II",
     category: "Extra-curricular",
   },
   {
     id:10,
     image: Work10,
-    title: "AWS Cloud",
-    category: "Extra-curricular",
+    title: "Bachelor of IT",
+    category: "Uni Degree",
+   
   },
 ];
 

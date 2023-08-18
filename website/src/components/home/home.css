@@ -31,11 +31,11 @@
     margin-bottom: 25px;
   }
   span{
-    color: rgb(51,101,171);
+    color: rgb(81,202,186);
     
   }  
   .home__img {
-    background: url(../../assets//img4.png);
+    background: url(../../assets//img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -114,11 +114,6 @@
       column-gap: 1.25rem;
     }
   
-    .home__hand {
-      width: 26px;
-      height: 26px;
-    }
-  
     .home__subtitle {
       padding-left: 3.75rem;
       margin-bottom: var(--mb-1);
@@ -179,9 +174,5 @@
       height: 180px;
     }
   
-    .home__hand {
-      width: 22px;
-      height: 22px;
-    }
   }
   

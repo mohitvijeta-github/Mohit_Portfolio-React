@@ -2,6 +2,8 @@ import './App.css';
 import About from './components/about/About';
 // import Certificates from './components/certificates/Certificates';
 import Work from './components/certificates/Work';
+import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import Qualification from './components/qualification/Qualification';
@@ -20,15 +22,13 @@ function App() {
    
       <Home/>
       <About/>
-      <Skills/>
       <Qualification/>
+      <Skills/>
       <Work/>
-      {/* <Certificates/> */}
-      {/* <Contact/>  */}
-  
+      <Contact/>
      
     </main>
-    
+    <Footer/>
    
     </>
   );

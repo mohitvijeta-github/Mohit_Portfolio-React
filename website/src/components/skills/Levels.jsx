@@ -62,33 +62,3 @@ export const BackEnd = () => {
             )
         }
 
-export const SoftSkills = () => {
-    return(
-        <div className="skill">
-            <p>Soft skills</p>
-            
-            <li>
-                <h3>Communication</h3>
-                <span className="bar"><span className="comm"></span></span>
-            </li>
-            <li>
-                <h3>Creativity</h3>
-                <span className="bar"><span className="crv"></span></span>
-            </li>
-            <li>
-                <h3>Leadership</h3>
-                <span className="bar"><span className="lds"></span></span>
-            </li>
-            <li>
-                <h3>Logical Thinking</h3>
-                <span className="bar"><span className="lgt"></span></span>
-            </li>
-            <li>
-                <h3>Problem Solving</h3>
-                <span className="bar"><span className="prs"></span></span>
-            </li>
-        </div>
-            )
-
-}
-        

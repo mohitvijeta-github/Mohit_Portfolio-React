@@ -13,12 +13,8 @@ const ClickEvent = () => {
             Back-End Skills
             <i class="uil uil-brackets-curly" ></i>
             </div>
-            <div className="skills__var">
-            Soft Skills
-            <i class="uil uil-brain"></i>
                 
             </div>
-        </div>
     )
 }
 

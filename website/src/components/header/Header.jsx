@@ -80,7 +80,7 @@ const Header = () => {
                 <i className="uil uil-briefcase-alt nav__icon"></i> Certificates
               </a>
             </li>
-
+{/* 
             <li className="nav__item">
               <a
                 href="#project"
@@ -93,7 +93,7 @@ const Header = () => {
               >
                 <i className="uil uil-scenery nav__icon"></i> Project
               </a>
-            </li>
+            </li> */}
 
             <li className="nav__item">
               <a

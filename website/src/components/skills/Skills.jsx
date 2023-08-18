@@ -1,5 +1,5 @@
 import './skills.css';
-import { BackEnd, FrontEnd, SoftSkills } from './Levels';
+import { BackEnd, FrontEnd} from './Levels';
 
 const Skills = () => {
 
@@ -10,7 +10,7 @@ const Skills = () => {
     <div className="skills__progress container grid">
       <FrontEnd/>
       <BackEnd/>
-      <SoftSkills/>
+      {/* <SoftSkills/> */}
     </div>
     </section>
   )

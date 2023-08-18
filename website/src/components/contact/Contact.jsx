@@ -1,124 +1,32 @@
-import './contact.css'; 
-import {useState} from "react"; 
-import {validateEmail} from "./utils"; 
- 
-const PasswordErrorMessage = () => { 
- return ( 
-   <p className="FieldError">Password should have at least 8 characters</p> 
- ); 
-}; 
- 
-function Contact() { 
- const [firstName, setFirstName] = useState(""); 
- const [lastName, setLastName] = useState(""); 
- const [email, setEmail] = useState(""); 
- const [password, setPassword] = useState({ 
-   value: "", 
-   isTouched: false, 
- }); 
- const [role, setRole] = useState("role"); 
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
- const getIsFormValid = () => { 
-   return ( 
-     firstName && 
-     validateEmail(email) && 
-     password.value.length >= 8 && 
-     role !== "role" 
-   ); 
- }; 
- 
- const clearForm = () => { 
-   setFirstName(""); 
-   setLastName(""); 
-   setEmail(""); 
-   setPassword({ 
-     value: "", 
-     isTouched: false, 
-   }); 
-   setRole("role"); 
- }; 
- 
- const handleSubmit = (e) => { 
-   e.preventDefault(); 
-   alert("Account created!"); 
-   clearForm(); 
- }; 
- 
- return ( 
-   <div className="App"> 
-     <form onSubmit={handleSubmit}> 
-       <fieldset> 
-         <h2>Sign Up</h2> 
-         <div className="Field"> 
-           <label> 
-             First name <sup>*</sup> 
-           </label> 
-           <input 
-             value={firstName} 
-             onChange={(e) => { 
-               setFirstName(e.target.value); 
-             }} 
-             placeholder="First name" 
-           /> 
-         </div> 
-         <div className="Field"> 
-           <label>Last name</label> 
-           <input 
-             value={lastName} 
-             onChange={(e) => { 
-               setLastName(e.target.value); 
-             }} 
-             placeholder="Last name" 
-           /> 
-         </div> 
-         <div className="Field"> 
-           <label> 
-             Email address <sup>*</sup> 
-           </label> 
-           <input 
-             value={email} 
-             onChange={(e) => { 
-               setEmail(e.target.value); 
-             }} 
-             placeholder="Email address" 
-           /> 
-         </div> 
-         <div className="Field"> 
-           <label> 
-             Password <sup>*</sup> 
-           </label> 
-           <input 
-             value={password.value} 
-             type="password" 
-             onChange={(e) => { 
-               setPassword({ ...password, value: e.target.value }); 
-             }} 
-             onBlur={() => { 
-               setPassword({ ...password, isTouched: true }); 
-             }} 
-             placeholder="Password" 
-           /> 
-           {password.isTouched && password.value.length < 8 ? ( 
-             <PasswordErrorMessage /> 
-           ) : null} 
-         </div> 
-         <div className="Field"> 
-           <label> 
-             Role <sup>*</sup> 
-           </label> 
-           <select value={role} onChange={(e) => setRole(e.target.value)}> 
-             <option value="role">Role</option> 
-             <option value="individual">Individual</option> 
-             <option value="business">Business</option> 
-           </select> 
-         </div> 
-         <button type="submit" disabled={!getIsFormValid()}> 
-           Submit 
-         </button> 
-       </fieldset> 
-     </form> 
-   </div> 
- ); 
-} 
+const Contact = () => {
 
-export default Contact; 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_nak1p6v', 'template_mh9c46r', form.current, 'FP_UzKluA1cS983Mv')
+      .then((result) => {
+          console.log(result.text);
+          console.log("Your email has been received successfully. I'll get back to you immediately.")
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+  return (
+    <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form>
+  );
+}
+export default Contact;
