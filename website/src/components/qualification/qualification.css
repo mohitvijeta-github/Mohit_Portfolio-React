@@ -17,16 +17,17 @@
 }
 
 .qualification__button:hover {
-    color: var(--title-color-dark);
+    color: var(--title-color);
 }
 
 .qualification__icon {
     font-size: 1.8rem;
     margin-right: var(--mb-0-25);
+
 }
 
 .qualification__active {
-    color: var(--title-color-dark);
+    color: var(--action-button);
 }
 
 .qualification__sections {
@@ -62,6 +63,7 @@
 
 .qualification__calender {
     font-size: var(--small-font-size);
+    color: var(--subtitle-color);
 }
 
 .qualification__rounder {

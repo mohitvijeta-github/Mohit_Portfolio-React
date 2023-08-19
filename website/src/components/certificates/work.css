@@ -24,8 +24,8 @@
   }
   
   .work__item:hover {
-    background-color: var(--title-color);
-    color: var(--container-color);
+    background-color: var(--container-color);
+    color: var(--title-color);
   }
   
   /* .work__card {
@@ -40,6 +40,7 @@
     /* border-radius: 1rem; */
     margin-bottom: var(--mb-1);
     border:1.5px solid #000;
+    filter: brightness(0.8);
   }
   .work__img:hover{
     width: 450px;
@@ -68,11 +69,12 @@
   
   .work__button:hover .work__button-icon {
     transform: translateX(0.25rem);
+    
   }
   
   /* Active Item Work */
   .active-work {
-    background-color: var(--title-color);
+    background-color: var(--action-button);
     color: var(--container-color);
   }
   

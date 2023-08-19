@@ -1,5 +1,5 @@
 .section__subtitle{
-    color: #000;
+    color: var(--subtitle-text);
 }
 .about__container {
     grid-template-columns: repeat(2,1fr);
@@ -41,7 +41,9 @@
 }
 .about__description{
     padding: 0 4rem 0 0;
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
+    color: var(--title-color);
+    align-items:start;
 }
 
 

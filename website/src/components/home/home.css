@@ -12,13 +12,14 @@
   .home__social {
     display: grid;
     grid-template-columns: max-content;
-    row-gap: 1rem;
-    padding-bottom: 62px;
+    row-gap: 1.5rem;
+    padding-bottom: 75px;
   }
   
   .home_social-icon {
-    font-size: 1.25rem;
-    color: var(--title-color);
+    font-size: 1.3rem;
+    color:  var(--action-button);
+   
   }
   
   .home_social-icon:hover {
@@ -31,9 +32,11 @@
     margin-bottom: 25px;
   }
   span{
-    color: rgb(81,202,186);
+    color: var(--action-button);
+
     
   }  
+
   .home__img {
     background: url(../../assets//img.png);
     background-repeat: no-repeat;
@@ -46,6 +49,7 @@
     width: 300px;
     height: 300px;
     animation: profile__animate 8s ease-in-out infinite 1s;
+    
   }
 
 .button{
@@ -53,9 +57,8 @@
   height: 15;
   border-radius: 30px;
   background-color: black;
-
+  color: var(--action-button);
 }
-
 .button:hover{
   background-color: #2b2727;
   font-size: 16px;
